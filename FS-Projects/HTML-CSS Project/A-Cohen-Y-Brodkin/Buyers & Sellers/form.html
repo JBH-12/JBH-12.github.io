@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="" />
+    <title>פרסום מודעה</title>
+    <link rel="stylesheet" href="./style/formStyle.css">
+</head>
+<body>
+
+    <div class="head">
+
+        <div id="mainTitle">
+            <a href="./index.html"><h1>Buyers & Sellers</h1></a>
+        </div>
+
+        <div id="bar_links">
+            <div class="links"><a href="./immovable_property.html"><span>נדל"ן</span></a></div>
+                <div class="links"><a href="./animals.html"><span>בעלי חיים</span></a></div>
+                <div class="links"><a href="./cars.html"><span>רכבים</span></a></div>
+                <div class="links"><a href="./furniture.html"><span>רהיטים</span></a></div>
+                <div class="links"><a href="./electronics.html"><span>מכשירי חשמל</span></a>
+                </div>
+        </div>
+
+        <div id="logo">
+            <img id="logo_img" src="./media/img/logo/logo.png" title="logo" alt="logo" />
+        </div>
+
+    </div>
+
+    
+
+
+    <div id="container">
+        <div id="title">
+            
+        </div>
+        <div>
+            <form id="form" action="#">
+                <h2>פרסם מודעתך</h2>
+                <ul>
+                    <li><label id="" for="?">בחר קטגוריה</label>
+                        <br>
+                        <select id="" name="subject">
+                            <option value="1">נדל"ן</option>
+                            <option value="2">בעלי חיים</option>
+                            <option value="3">רכבים</option>
+                            <option value="4">רהיטים</option>
+                            <option value="5">מכשירי חשמל</option>
+                        </select>
+                    </li>
+                    <li><label id="" for="?">בחר אזור</label>
+                        <br>
+                        <select id="" name="area">
+                            <option value="1">ירושלים</option>
+                            <option value="2">המרכז</option>
+                            <option value="3">צפון</option>
+                            <option value="4">דרום</option>
+                        </select>
+                    </li>
+                    <li><label id="" for="?">בחר קטגוריה</label>
+                        <br>
+                        <select id="" name="conditiont">
+                            <option value="1">חדש</option>
+                            <option value="2">מחודש</option>
+                            <option value="3">במצב טוב</option>
+                            <option value="4">דרוש תיקון</option>
+                        </select>
+                    </li>
+                    <li>
+                        <div id="comments2">
+                            <label id="tofes3" for="tele">פרטי המודעה</label>
+                            <br>
+                            <textarea name="comments" id="comments">פרטי המוצר ומצבו</textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <label id="" for="price">מחיר</label>
+                        <br>
+                        <input id="price" name="price" maxlength="7" type="text" pattern="\d{7}" placeholder="מחיר " />
+                    </li>
+                    <h4>פרטים ליצירת קשר</h4>
+                    <li><label id="" for="name">שם</label>
+                        <br>
+                        <input maxlength="20" minlength="2" type="text" id="name" name="name" placeholder="הזן שם" />
+                    </li>
+                    <li>
+                        <label id="" for="email">E-mail</label>
+                        <br>
+                        <input id="email" name="email" maxlength="7" minlength="7" type="email"
+                            placeholder="הזן כתובת אימייל " />
+                    </li>
+                    <li><label id="" for="tele">טלפון</label>
+                        <br>
+                        <input id="phon" name="phon" maxlength="7" type="text" pattern="\d{7}"
+                            placeholder="הזן את מס' הטלפון " size="10" />
+                        <select id="areaCode" name="areaCode">
+                            <option value="050">050</option>
+                            <option value="051">050</option>
+                            <option value="052">052</option>
+                            <option value="053">053</option>
+                            <option value="054">054</option>
+                            <option value="055">055</option>
+                            <option value="056">056</option>
+                            <option value="057">057</option>
+                            <option value="058">058</option>
+                            <option value="059">050</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label id="tofes3" for="tele">האם תרצה שמספר הטלפון שלך יהיה גלוי?</label>
+                        <br>
+                        <label><input id="secret" name="open-secret" type="radio" value="secret" checked>
+                            חסוי</label>
+                        <label><input id="open" name="open-secret" type="radio" value="open">גלוי</label>
+                    </li>
+                    <br>
+                    <br>
+                    <center><input id="submit_button" type="submit"></center>
+                    <br>
+                    <div id="toda"><p >תודה שבחרת לפרסם אצלינו!</p></div>
+                </ul>
+                <br><br>
+            </form>
+        </div>
+        <div>
+            <div id="left">
+                <h3>קטגוריות</h3>
+                <ul>
+                    <li>
+                        <a href="./immovable_property.html">נדל"ן</a>
+                    </li>
+                    <li>
+                        <a href="./cars.html">רכבים</a>
+                    </li>
+                    <li>
+                        <a href="./furniture.html">רהיטים</a>
+                    </li>
+                    <li>
+                        <a href="./electronics.html">מכשירי חשמל</a>
+                    </li>
+                    <li>
+                        <a href="./animals.html">בעלי חיים</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>

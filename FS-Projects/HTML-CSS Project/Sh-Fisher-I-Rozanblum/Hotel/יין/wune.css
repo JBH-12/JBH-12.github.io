@@ -1,0 +1,21 @@
+
+p{
+    width: 1000px;
+    height: 100%;
+    background-color: goldenrod;
+    margin-left: 25%;
+    border: 5px solid black;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+div{
+    display: flex;
+    align-items: center;
+}
+img{
+    width:100%;
+    height: 350px;
+}
+

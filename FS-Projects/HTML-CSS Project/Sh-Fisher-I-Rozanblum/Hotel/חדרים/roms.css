@@ -1,0 +1,60 @@
+body{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+
+}
+.contaner{
+    height: 700px;
+    width: 600px;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 100%;
+}
+.second{
+    height: 690px;
+    width: 590px;
+    background-color: goldenrod;
+    margin-top: 5px;
+    border-radius: 20px;
+    
+}
+.contaner{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+input{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    text-align:center ;
+    
+}
+label{
+    font-size: 20px;
+    color: white;
+    
+}
+h2{
+    color: wheat;
+    font-size: 40px;
+}
+
+
+
+@keyframes example{
+    0%{background-color: black;}
+    25%{background-color: blue;}
+    50%{background-color:black}
+    75%{background-color:blue}
+    100%{background-color: black;}
+}

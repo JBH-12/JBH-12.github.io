@@ -1,0 +1,21 @@
+body{
+    direction: rtl;
+    display: flex;
+}
+img{
+    width: 500px;
+    height: 400px;
+}
+.pp{
+    width: 500px;
+    text-align: justify;
+    background-color: cornflowerblue;
+    align-self: self-start;
+    margin-top: 50px;
+}
+.gim-rom{
+  
+  position: relative;
+  left: -200px;
+  
+}

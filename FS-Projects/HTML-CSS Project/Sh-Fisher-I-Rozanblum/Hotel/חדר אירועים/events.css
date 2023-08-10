@@ -1,0 +1,19 @@
+img {
+    width: 100%;
+    height: 500px;
+}
+
+.p {
+    width: 500px;
+    height: 100%;
+    margin-left: 100px;
+    text-align: justify;
+    background-color: goldenrod;
+    margin-left: 25%;
+    font-family: 'Ribeye', cursive;
+    font-family: 'Yesteryear', cursive;
+}
+
+h1 {
+    text-align: center;
+}

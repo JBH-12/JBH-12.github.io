@@ -1,0 +1,137 @@
+body{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/09/Carnivora.jpg);
+    opacity: 0.8;
+    text-align: center;
+}  
+header{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    flex-direction:column-reverse;
+}
+
+h1, h2, h3{padding: 20px;}
+
+p {padding:40px}
+
+
+
+p span{
+    background-color: aliceblue;
+    box-sizing: border-box;
+    font-size: 30px;
+    border: dotted;
+    text-align: center;
+    border-width:10px ;
+    padding: 40px;
+}
+table{
+    padding:40px; 
+    margin: 40px;
+    font-size: xx-large;
+    float:right ;
+    border: solid red;
+    border-radius:5px;
+  
+}
+td{
+    border:solid ;
+}
+
+article{
+    background-color: rgb(255, 253, 240);
+    color: rgb(255, 0, 98);
+    font-size: xx-large;
+}
+
+article span {
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+li  {
+    display: inline-block;
+    background-color: rgb(40, 229, 243);
+    text-align: left;
+    padding: 30px;
+    border: 1px dashed rgb(95, 77, 176);
+}
+
+li a {
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+li:hover {
+    background-color: rgb(227, 156, 63);
+}
+
+
+h1{
+    color: #000;
+    display: inline-block;
+    background-color: rgb(57, 79, 47);
+    text-align: center;
+    font-size:xx-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+h4{
+     font-size: 20px;
+     text-align: center;
+     margin: 2px;
+}
+
+h2{
+     text-align: center;
+     background-color: red;
+}
+
+h3{
+     color:white;
+     text-align: center;
+     background-color: blue;
+}
+
+.continer{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     background-color: chartreuse;
+}
+
+.continer div{
+    display:inline-block ;
+    text-align: right;
+    border: 2px solid ;
+    margin: 2px;
+    flex-grow: 1;
+}
+
+
+.continer div img{
+    width: 100%;
+    max-height: 250px;
+    
+}
+
+.continer img:hover{
+   width: 105%;
+}
+
+
+#hyena{
+    
+    margin-right:-22%;
+   
+}
+
+@media screen and (max-width: 800px) {
+   p span{
+       border:dotted red;
+    }
+    li:hover{
+background-color: red;
+    }
+   
+}

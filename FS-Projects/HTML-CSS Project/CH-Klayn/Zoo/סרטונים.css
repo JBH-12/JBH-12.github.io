@@ -1,0 +1,44 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.wcdn.co.il/f_auto,q_auto,w_1200,t_54/3/4/2/1/3421396-46.jpg);
+}
+
+div iframe{
+    width:500px;  height:500px;
+}
+
+video{
+     width: 100%;
+}
+
+form{
+     grid-column: 2;
+     grid-row: 2;
+     width: 80%;
+     font-size: 40px;
+     padding-top: 50px;
+     margin-top: 20px;
+     background-color:rgb(26, 128, 161);
+     border-radius: 10px;
+
+}
+form input{
+     width: 100px;
+     height: 50px;
+}
+
+.grid {
+    border-bottom:darkgoldenrod ;
+    display: grid;
+    color: rgb(255, 0, 0);
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+}
+
+@media screen and (max-width:800px) {
+    .grid div{
+        border: 1px solid green;   
+    }
+}

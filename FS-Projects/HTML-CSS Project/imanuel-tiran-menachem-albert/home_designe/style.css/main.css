@@ -1,0 +1,97 @@
+/* צבעי האתר */
+:root {
+  --blue: #32484f;
+  --gold: linear-gradient(45deg, #ffd900, #a28a16);
+  --brown: #b17337;
+}
+
+body {
+  margin: 0;
+  font-family: calibri;
+  font-size: 20px;
+  direction: rtl;
+  margin: 0 auto;
+}
+p,
+a,
+h1,
+h2 {
+  color: var(--brown);
+}
+h1,
+h2 {
+  font-weight: bolder;
+  text-align: center;
+}
+h3 {
+  position: relative;
+  color: var(--blue);
+  font-weight: bolder;
+  text-shadow: 1px 1px 10px #ffffff;
+}
+/* הכותרת של כל הדפים */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  z-index: 1;
+  background: rgba(132, 132, 132, 0.7);
+}
+
+#logo {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 12%;
+  z-index: 2;
+}
+.slant {
+  width: 2px;
+  height: 60%;
+  margin: 2%;
+  transform: rotateZ(45deg);
+  background: var(--gold);
+}
+/* תחתית של כל העמודים */
+footer {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  background-color: var(--blue);
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  background: linear-gradient(45deg, #000000, #000000, #32484f);
+}
+
+#left {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 40%;
+}
+
+#stand-line {
+  top: 25px;
+  width: 2px;
+  height: 75%;
+  background: var(--gold);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#right {
+  width: 40%;
+  text-align: center;
+}

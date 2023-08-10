@@ -1,0 +1,66 @@
+body {
+  background-image: radial-gradient(
+      circle at center center,
+      #444df70c,
+      #ffdc9c7a
+    ),
+    repeating-radial-gradient(
+      circle at center center,
+      #444df715,
+      #444df700,
+      10px,
+      transparent 20px,
+      transparent 10px
+    );
+  background-blend-mode: multiply;
+}
+h3 {
+  top: 50px;
+  text-align: right;
+  font-size: 35px;
+}
+
+div a,
+div li,
+.first li {
+  color: var(--blue);
+  font-weight: bold;
+}
+/* רקע של הטיפים והאתרים */
+.window {
+  width: 70%;
+  padding: 10px;
+  background-color: var(--brown);
+}
+
+#title-web {
+  text-align: left;
+}
+/* עיצוה של ההטמעה */
+#frame {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  margin-top: 40px;
+  margin-bottom: 150px;
+}
+iframe {
+  width: 550px;
+  height: 310px;
+}
+#frame h3 {
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+/* סידור התוכן של הלינקים החיצונים */
+#webs {
+  float: left;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-left: 0px;
+}

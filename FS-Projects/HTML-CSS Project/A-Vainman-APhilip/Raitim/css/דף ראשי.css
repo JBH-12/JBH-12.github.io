@@ -1,0 +1,199 @@
+body {
+    background-color: rgba(99, 79, 9, 0.583);
+    text-align: center;
+}
+
+/* כותרת ראשית */
+span {
+
+    font-size: 120px;
+    color: white;
+}
+
+.title {
+    background-image: url(../תמונות/ab.jpg);
+    width: 100%;
+    height: 34vb;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    direction: rtl;
+}
+
+.title img {
+    width: 230px;
+    height: 230px;
+    border-radius: 230px;
+    float: right;
+    z-index: 3;
+    margin: 40px;
+
+}
+
+#button {
+    float: left;
+    width: 100px;
+    height: 25px;
+    margin: 3%;
+}
+
+/* לינק */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.link {
+    z-index: 7;
+    background-color: rgba(189, 154, 29, 0.583);
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    flex-wrap: wrap;
+    top: 35vh;
+}
+
+.link a {
+    font-size: 30px;
+}
+
+/*גןף האתר  */
+figcaption {
+    font-size: 30px;
+}
+
+.products {
+    background-color: rgba(140, 114, 21, 0.583);
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 250px;
+    height: 200px;
+    margin: 5px;
+}
+
+/* כותרות */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 80px;
+    color: rgba(69, 65, 50, 0.583);
+    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+}
+
+/* טבלה */
+table {
+    width: 100%;
+    background-color: white;
+}
+
+td,
+th {
+    border: 1px solid #d1c5c5;
+    text-align: right;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(168, 169, 105);
+}
+
+/* אודותינו */
+p {
+    border: 2px solid white;
+    font-size: 43px;
+    margin: 3px;
+    padding: 8px;
+    color: white;
+    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+}
+
+.grid {
+    background-color: rgb(5, 5, 5);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+}
+
+.flex-grid:nth-child(1) {
+    grid-column: 1/3;
+}
+
+.p:nth-child(2) {
+    grid-column: 2/4;
+}
+
+.flex-grid {
+    margin: 3px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-grid img {
+    width: 500px;
+    height: 400px;
+    margin: 2px;
+}
+
+.flex-grid video {
+    width: 500px;
+    height: 400px;
+
+}
+
+/* אתרים צדדים */
+iframe {
+    height: 500px;
+    padding: 3px;
+}
+
+.iframe {
+    background-color: rgba(140, 114, 21, 0.583);
+    float: right;
+    width: 19%;
+    margin-top: 50px;
+
+}
+
+/* טבלה */
+ul,
+h6 {
+    font-size: 30px;
+}
+
+/* שינוי גדלים */
+@media only screen and (max-width: 768px) {
+    span {
+        font-size: 80px;
+    }
+
+    .title img {
+        width: 150px;
+        height: 150px;
+        border-radius: 150spx;
+    }
+
+    p {
+        font-size: 30px;
+        padding: 4px;
+    }
+
+    .products img {
+        width: 200px;
+        height: 150px;
+    }
+
+}

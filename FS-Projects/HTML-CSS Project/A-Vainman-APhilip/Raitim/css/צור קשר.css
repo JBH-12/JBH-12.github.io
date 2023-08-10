@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(65, 60, 52);
+
+}
+
+/* סמל */
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    float: right;
+
+}
+
+/* לינק */
+.link {
+    background-color: aquamarine;
+    width: 50vh;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.link a {
+    margin: 5px;
+    color: #000;
+    text-decoration: none;
+}
+
+/* הטופס */
+.form {
+    background-color: aliceblue;
+    border: 7px solid rgb(34, 84, 178);
+    width: 50%;
+    border-radius: 90px 10px;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+.input {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* שינוי גודל */
+
+@media only screen and (max-width: 768px) {
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 150spx;
+    }
+}

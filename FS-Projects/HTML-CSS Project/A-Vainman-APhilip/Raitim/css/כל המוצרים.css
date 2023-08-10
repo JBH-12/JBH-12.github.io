@@ -1,0 +1,103 @@
+body {
+    background-color: rgba(99, 79, 9, 0.583);
+    text-align: center;
+
+}
+
+/*  כותרת ראשית*/
+span {
+
+    font-size: 120px;
+    color: white;
+}
+
+.title {
+    background-image: url(../תמונות/ab.jpg);
+    width: 100%;
+    height: 34vb;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    direction: rtl;
+}
+
+.title img {
+    width: 230px;
+    height: 230px;
+    border-radius: 230px;
+    float: right;
+    z-index: 3;
+    margin: 40px;
+
+}
+
+#button {
+    float: left;
+    width: 100px;
+    height: 25px;
+    margin: 3%;
+}
+
+/* לינק */
+.link {
+    z-index: 10;
+    background-color: rgba(189, 154, 29, 0.583);
+    width: 40vh;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin: 3px;
+    position: fixed;
+    flex-wrap: wrap;
+}
+
+.link a {
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* כותרת +מוצרים */
+h1 {
+    font-size: 100px;
+    color: rgba(69, 65, 50, 0.583);
+
+}
+
+.products {
+    z-index: 10;
+    background-color: rgba(140, 114, 21, 0.583);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+img:hover {
+    width: 300px;
+    height: 300px;
+}
+
+/* לינק בשחור */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* שינוי גדלים */
+@media only screen and (max-width: 768px) {
+    span {
+        font-size: 80px;
+    }
+
+    .title img {
+        width: 150px;
+        height: 150px;
+        border-radius: 150spx;
+    }
+}

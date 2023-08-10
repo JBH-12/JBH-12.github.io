@@ -1,0 +1,62 @@
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 1200px;
+    height: 900px;
+    margin-right: 20%;
+    border: 3px solid #41630F;
+
+}
+
+.flowers {
+    width: 300px;
+}
+
+.flowers:hover {
+    width: 320px;
+}
+
+.flr {
+    background-color: #58083C;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.tree {
+    background-color: #41630F;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.title {
+    position: absolute;
+    color: white;
+    font-size: 96px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: 30%;
+    right: 60%;
+}
+
+#adress_flower {
+    background-color: #58083c77;
+    width: 360px;
+    padding-right: 20px;
+    font-size: 30px;
+    color: #3e5f0c;
+    font-weight: bold;
+}
+#adress_trees{
+    background-color: #ABCA80;
+    width: 360px;
+    padding-right: 20px;
+    font-size: 30px;
+    color: #3e5f0c;
+    font-weight: bold;  
+}

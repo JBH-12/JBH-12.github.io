@@ -1,0 +1,410 @@
+body {
+    direction: rtl;
+}
+
+/* לוגו ותפריט */
+header {
+    display: flex;
+    border-bottom: 1px solid #58083C;
+}
+
+ul {
+    display: inline;
+}
+
+li {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    background-color: #41630F;
+    border-bottom: 4px solid #58083C;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+#adress {
+    width: 370px;
+    padding-right: 20px;
+    font-size: 30px;
+    color: #3e5f0c;
+    font-weight: bold;
+
+}
+
+#logo {
+    align-content: flex-start;
+    margin-right: 50px;
+}
+
+#menu {
+    display: inline;
+    align-content: flex-end;
+    align-self: flex-end;
+    grid-gap: 10px;
+}
+
+#grow {
+    position: absolute;
+    width: 22%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+li:hover {
+    background-color: #ABCA80;
+    border-bottom: 4px solid #58083C;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0B1403;
+    font-weight: bold;
+}
+
+
+/*  טקסט אודות, תמונה ווידאו */
+#top {
+    display: flex;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    gap: 10px;
+}
+
+
+
+#about {
+    width: 31%;
+    background-color: #203300;
+    color: white;
+    padding: 26px;
+    font-size: 26px;
+    font-style: italic;
+    text-align: right;
+
+}
+
+/* סרטונים */
+
+#garden {
+    grid-area: 6/4;
+    width: 650px;
+    height: 420px;
+    margin-right: 45px;
+}
+
+#plant {
+    width: 340px;
+    border: 1px solid #203300;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+#fruit_trees {
+    width: 340px;
+    /* margin-right: 70px; */
+    margin-top: 40px;
+    border: 1px solid #203300;
+
+}
+
+
+/* טבלת שעות, קישורים וטופס */
+main {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    width: 1600px;
+    height: 900px;
+    grid-column: 1/10;
+    grid-row: 5;
+    z-index: 2;
+    margin-right: 50px;
+    background-color: #abca8050;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 80px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: move 10s linear infinite 1s normal;
+}
+
+@keyframes move {
+    0% {
+        top: -60px;
+
+    }
+
+    25% {
+        right: 30px;
+
+    }
+
+    50% {
+        right: 60px;
+
+    }
+
+    75% {
+        right: 30px;
+
+    }
+
+    ;
+
+    100% {
+        top: -60px;
+
+    }
+}
+
+
+
+
+
+
+
+table {
+
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+    height: 380px;
+    width: 450px;
+}
+
+table th {
+    border: 1px solid #0B1403;
+    background-color: #41630f62;
+    text-align: left;
+    color: rgb(56, 97, 97);
+    border: 1px solid black;
+    padding: 4px 30px 4px 8px;
+    text-align: center;
+    font-size: 13px;
+}
+
+table td {
+    border: 1px solid #0B1403;
+    font-size: 12px;
+    background-color: #41630f62;
+    text-align: center;
+}
+
+form {
+    background-color: #41630f62;
+    color: white;
+    margin-top: 0;
+    display: inline-block;
+    border-radius: 4px 20px 4px 20px;
+    width: 320px;
+    height: 380px;
+    grid-column: 10;
+    grid-row: 1/2;
+    text-align: center;
+    z-index: 3;
+}
+
+input {
+    height: 20px;
+}
+
+input[type=submit],
+input[type=reset] {
+    width: 160px;
+    height: 70px;
+    border-radius: 6px;
+    font-size: 30px;
+    display: i;
+}
+
+input [type=submit] {
+    width: 60px;
+}
+
+.wat {
+    width: 50px;
+    top: 30px;
+}
+
+#tree {
+    display: inline-block;
+    width: 750px;
+    height: 180px;
+    position: relative;
+    border: 2px solid #58083C;
+    text-align: center;
+    border-radius: 6px;
+    grid-column: 4/9;
+    grid-row: 1;
+}
+
+#back_tree {
+    width: 750px;
+    height: 180px;
+}
+
+#flower {
+    display: inline-block;
+    width: 750px;
+    height: 180px;
+    position: relative;
+    border: 2px solid #58083C;
+    text-align: center;
+    border-radius: 6px;
+    grid-column: 4/9;
+    grid-row: 3;
+    margin-top: 20px;
+}
+
+#back_flower {
+    width: 750px;
+    height: 180px;
+}
+
+
+/* קישורים חיצוניים */
+#bottom {
+    position: absolute;
+    bottom: -105%;
+    width: 100%;
+    height: 220px;
+    color: #0B1403;
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+    background-color: #58083c36;
+}
+
+input[type=submit]:hover {
+    background-color: #58083C;
+    border: none;
+    color: white;
+}
+
+@media screen and (max-width:1320px) {
+    #adress {
+        font-size: 30px;
+        padding-right: 10px;
+    }
+
+    #grow {
+        width: 25%;
+    }
+
+    /* #top {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: repeat(5, 20%);
+        gap: 10px;
+    } */
+
+
+    #about {
+        font-size: 22px;
+    }
+
+    #bottom,
+    #videos,
+    #a,
+    #h,
+    table {
+        display: none;
+    }
+
+    #image_top {
+        width: 800px;
+    }
+
+    main {
+
+        width: 900px;
+        margin-left: 700px;
+        background-color: white;
+    }
+
+    #tree {
+        display: block;
+    }
+
+    #flower {
+        display: block;
+    }
+
+    form {
+        /* margin-top: 0; */
+        grid-column: 7;
+        grid-row: 6/8;
+    }
+
+    #garden {
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (max-width:1057px) {
+    #top {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: repeat(5, 20%);
+        gap: 10px;
+    }
+
+    #adress,
+    #grow {
+        display: none;
+    }
+
+    #about {
+        grid-area: 1/1/3/150;
+        font-size: 25px;
+    }
+
+    #image_top {
+        grid-area: 3/1/6/2;
+        border: 1px solid black;
+        margin-bottom: 100px;
+    }
+
+    #image_top img {
+        width: 100%
+    }
+
+    #tree {
+        position: absolute;
+        margin-right: -50px;
+        margin-top: 50px;
+    }
+
+    #flower {
+        position: absolute;
+        margin-top: 250px;
+        margin-right: -50px;
+        margin-left: 100px;
+    }
+
+    form {
+        grid-column: 3;
+    }
+
+    #garden {
+        display: none;
+    }
+}

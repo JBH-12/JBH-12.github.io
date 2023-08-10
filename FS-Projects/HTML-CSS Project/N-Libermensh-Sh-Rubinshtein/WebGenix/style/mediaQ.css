@@ -1,0 +1,59 @@
+@media only screen and (max-width: 740px) {
+      .flexbox {
+            flex-direction: column;
+            gap: 0px;
+            justify-content: stretch;
+            align-items: stretch;
+      }
+
+      #videos-customers {
+            align-items: center;
+            justify-content: space-around;
+            gap: 5px;
+      }
+
+      #top_nav {
+            align-items: center;
+            font-size: 3vh;
+      }
+
+      .flexitem {
+            flex: 1 1 0px;
+            width: 90%;
+      }
+
+      #top_nav img {
+            order: -1;
+            margin: 2% 50% 2% 50%;
+      }
+
+      #top_nav a {
+            padding: 14px 16px;
+            text-decoration: none;
+      }
+
+      header p {
+            font-size: 3vh;
+            padding-right: 10%;
+            padding-left: 10%;
+
+      }
+
+      #our_logo {
+            width: 35%;
+
+            margin-right: 32.5%;
+      }
+
+      #customers_images_container {
+            flex-direction: row;
+      }
+
+      #details {
+            font-size: 2vh;
+      }
+
+      #bottom_nav {
+            display: none;
+      }
+}

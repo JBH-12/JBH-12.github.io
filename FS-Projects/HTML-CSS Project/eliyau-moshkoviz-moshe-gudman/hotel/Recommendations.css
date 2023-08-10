@@ -1,0 +1,74 @@
+.background {
+    position: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(image/דף\ רקע.jpg);
+    opacity: 0.5;
+    z-index: -1;
+}
+/* רשימת קישורים */
+ul {
+    position: fixed;
+    margin-top: 200px;
+    direction: rtl;
+    font-size: 30px;
+    right: 10px;
+    padding: 30px;
+    border: 4px double goldenrod;
+    list-style-type: none;
+    border-radius: 15px;
+}
+ul li a {
+    color: goldenrod;
+    font-size: 40px;
+    font-weight: bold;
+}
+/* תמונה תחת הכותרת */
+main {
+    position: relative;
+    background-color: rgb(205, 207, 209);
+}
+main img {
+    width: 100%;
+    height: 250px;
+}
+/* תמונות */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color:#bfb789;
+    padding: 30px;
+}
+nav img {
+    height: 500px;
+    width: 550px;
+}
+/* מידע בטבלה */
+section {
+    width: 780px;
+    margin: 90px auto 90px auto;
+    text-align: center;
+}
+section h1 {
+    padding: 5px;
+    font-size: 40px;
+}
+section table{
+    border-collapse: collapse;
+    border: 3px solid;
+    border-color: black;
+}
+section table td {
+    text-align: center;
+    background-color: rgb(211, 208, 208);
+    color: green;
+    padding: 4px 30px;
+    border: 1px solid;
+    border-color: black;
+   
+}
+section table th {
+    border: 1px solid;
+    background-color: gray;
+}

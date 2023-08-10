@@ -1,0 +1,40 @@
+
+/* תמונה תחת הכותרת */
+main {
+    background-image: url(image/רקע\ חדר.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+}
+/* תמונות */
+section {
+    background-color: rgb(205, 207, 209);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    text-align: center;
+}
+section div {
+    padding: 30px;
+}
+section h1 {
+    text-align: right;
+    direction: rtl;
+    font-size: 40px;
+}
+section .divider {
+    border-top: 2px solid #000;
+    padding-bottom: 10px;
+}
+section p {
+    direction: rtl;
+    text-align: justify;
+    font-size: 30px;
+    width: 500px;
+
+}
+
+

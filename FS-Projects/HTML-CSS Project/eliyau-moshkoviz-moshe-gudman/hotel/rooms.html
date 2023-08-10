@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="romms.css">
+    <link rel="stylesheet" href="base.css">
+    <title>rooms</title>
+</head>
+<body>
+        <!-- החלק העליון של העמוד לוגו ותפריט -->
+        <header>
+            <div class="logo">
+                <a href="file:///C:/Users/stu/Desktop/html/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%D7%9D/hotel/hotel.html">
+                    <img src="image/לוגו.png" alt="" />
+                </a>
+            </div>
+            <div class="manu">
+                <a href="file:///C:/Users/stu/Desktop/html/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%D7%9D/hotel/hotel.html">
+                    <span>ראשי</span>
+                </a>
+                <a href="file:///C:/Users/stu/Desktop/html/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%D7%9D/hotel/about.html">
+                    <span>אודות</span>
+                </a>
+                <a href="file:///C:/Users/stu/Desktop/html/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%D7%9D/hotel/rooms.html">
+                    <span>חדרי מלון</span>
+                </a>
+                <a href="file:///C:/Users/stu/Desktop/html/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%D7%9D/hotel/facilities.html">
+                    <span>מתקני מלון</span>
+                </a>
+                <a href="file:///C:/Users/stu/Desktop/html/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%D7%9D/hotel/Recommendations.html">
+                    <span>המלצות</span>
+                </a>
+            </div>
+        </header>
+        <!-- תמונה תחת הכותרת -->
+        <main>
+            <h1> חדרי המלון</h1>
+        </main>
+        <!-- תמונות -->
+        <section>
+            <div>
+                <h1>חדרי גן</h1>
+                <div class="divider"></div>
+                <img src="image/חדרי גן.jpg" alt="">
+                <p>חדרי הגן מפנקים ומרווחים עם יציאה למרפסת הכוללת מערכת ישיבה מפנקת.</p>
+            </div>
+            <div>
+                <h1> סוויטות</h1>
+                <div class="divider"></div>
+                <img src="image/סויטות.jpg" alt="">
+                <p>חדרי הסוויטות גדולים הכוללים חלל אחד גדול. חלקן עם יציאה למרפסת ונוף עוצר נשימה.</p>
+            </div>
+            <div>
+                <h1>חדר סטנדרט</h1>
+                <div class="divider"></div>
+                <img src="image/חדר סטנדרט.jpg" alt="">
+                <p>חדרי הסטנדרט מרווחים ומרוהטים בעצוב מודרני, חלק מהחדרים פונים להרי הצפון וחלקם עם נוף לכנרת.</p>
+            </div>
+        </section>    
+    <!-- טופס למילוי פרטים -->
+    <rooter>
+        <div id="filling-details">
+            <h1>מלאו פרטיכם, ותיהנו מחופש ברמה שלא הכרתם</h1>
+            <form action="get">
+                <p>
+                    <input type="text" name="name" minlength="2" maxlength="20" pattern="[א-ת]+" placeholder="שם מלא">
+                </p>
+                <p>
+                    <input name="email" type="email" placeholder="@email">
+                </p>
+                <p>
+                    <input type="tel" name="tel" minlength="10" maxlength="10" pattern="[0-9]+" placeholder="טלפון">
+                </p>
+                <p>
+                    <select name="type">
+                        <option value="משפחתי">אירוח פרטי</option>
+                        <option value="קבוצות">אירוח קבוצות</option>
+                        <option value="אירועים">אירועים</option>
+                    </select>
+                </p>
+                <h3>תאריך הגעה ועזיבה </h3>
+                <p>
+                    <input type="date">
+                </p>
+                <p>
+                    <input type="date">
+                </p>
+                <h3>הזמנות ליחדים</h3>
+                <p>
+                    <span>
+                        <select name="room" id="">
+                            <option value="1">1 חדר</option>
+                            <option value="2">2 חדרים</option>
+                            <option value="3">3 חדרים</option>
+                            <option value="4">4 חדרים</option>
+                        </select>
+                    </span>
+                    <span>
+                        <select name="baby" id="">
+                            <option value="0">o תינוקים</option>
+                            <option value="1">1 תינוק</option>
+                            <option value="2">2 תינוקים</option>
+                        </select>
+                    </span>
+                    <span>
+                        <select name="child" id="">
+                            <option value="0">0 ילדים</option>
+                            <option value="1">1 ילד</option>
+                            <option value="2">2 ילדים</option>
+                            <option value="3">3 ילדים</option>
+                        </select>
+                    </span>
+                    <span>
+                        <select name="adolts" id="">
+                            <option value="1">מבוגר 1</option>
+                            <option value="2"> 2 מבוגרים</option>
+                            <option value="3"> 3 מבוגרים</option>
+                            <option value="4"> 4 מבוגרים</option>
+                        </select>
+                    </span>
+                </p>
+                <h3>כמות חדרים לקבוצות </h3>
+                <p>
+                    <input type="number" min="2" max="54"><br>
+                </p>
+                <p>
+                    <input id="submit" type="submit" value="שלח">
+                </p>
+            </form>
+        </div>
+    </rooter>
+    </body>
+</html>

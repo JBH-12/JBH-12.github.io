@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css files/style.css">
+    <title>Vacation</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header_conteiner">
+            <div class="logo"><img src="photos/logo.png" alt=""></div>
+            <div class="logo_text">Vacation4U</div>
+            <!-- כפתור לזימון הform -->
+            <div class="account_access" onclick="document.getElementById('id01').style.display='block'"><a href="#access"><img
+                        src="photos\account_circle_FILL0_wght400_GRAD0_opsz48.png" alt="account_access"
+                        title="Sign-in"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_conteiner">
+            <section>
+                <article>
+                    <div class="article_conteiner">
+                        <div class="video">
+                            <video src="video/videoplayback.mp4" muted loop autoplay></video>
+                            <div class="article">
+                                <p class="about_us">"Welcome to the Perfect Getaway - Unveiling the Best of
+                                    Hospitality!<br><br>
+
+                                    Discover a world of enchanting hotels, charming B&Bs, and luxurious villas in prime
+                                    locations. We curate diverse vacation packages, offering quality service and easy
+                                    access to breathtaking attractions. Plan your dream vacation effortlessly with our
+                                    user-friendly website. Experience the magic of nature and create unforgettable
+                                    memories with us!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+            </section>
+
+            <section>
+                <div class="main_title">
+                    <h1>choose your vacation</h1>
+                </div>
+            </section>
+
+            <section>
+                <div class="items">
+                    <div class="item" id="item_a"><a href="hotels.html"><img src="photos/hotel.jpg"
+                                alt=""></a><span>hotels</span></div>
+                    <div class="item" id="item_b"><a href="hotels.html"><img src="photos/וילה.jpg"
+                                alt=""></a><span>villas</span></div>
+                    <div class="item" id="item_c"><a href="hotels.html"><img src="photos/צימר.jpeg"
+                                alt=""></a><span>B&Bs</span></div>
+                </div>
+            </section>
+            <div class="iframes_conteiner">
+                <h2>the guide to the perfect vacation</h2>
+                <div class="iframes">
+
+                    <iframe width="1212" height="682" src="https://www.youtube.com/embed/wd_JWYr7VGs"
+                        title="Must Have LONG FLIGHT ESSENTIALS | What to Pack for a Long Flight (2023)" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_conteiner" id="footer">
+            
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+
+                
+                <form class="modal-content animate" method="get">
+
+                    <div class="container ttt">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="owners">
+                <h3>all rights reserved:</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Josh Bloch</td>
+                            <td>058-7142427</td>
+                            <td>s0527142427@gmail.com</td>
+
+                        </tr>
+                        <tr>
+                            <td>Michael Busso</td>
+                            <td>054-8984966</td>
+                            <td>mb0548984966@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

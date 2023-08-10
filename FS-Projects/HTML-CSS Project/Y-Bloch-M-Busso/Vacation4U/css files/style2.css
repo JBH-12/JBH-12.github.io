@@ -1,0 +1,262 @@
+/* <general> */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* </general> */
+
+/* <header> */
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.header_conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.back img {
+    height: 50px;
+    width: 50px;
+}
+
+.logo_text {
+    width: min-content;
+    font-size: 50px;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+
+}
+
+.logo img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+}
+
+/* </header> */
+
+/* <main> */
+
+h1 {
+    font-size: 45pt;
+    color: rgb(85, 14, 14);
+    text-shadow: 0 4px 8px rgba(69, 67, 69, 0.375);
+}
+
+h2 {
+    margin: 5px 0;
+    font-size: 25pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    height: 250px;
+    max-width: 100%;
+    border-radius: 10px;
+
+}
+
+ul {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 10px 30px;
+    font-size: larger;
+    border-right: 1px solid gray;
+    padding: 20px 60px 20px 0;
+}
+
+a {
+    text-decoration: none;
+    user-select: none;
+    font-style: normal;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+span {
+    display: block;
+    font-size: 20pt;
+}
+
+img:hover {
+    opacity: 0.7;
+}
+
+.type {
+    margin-bottom: 0;
+    letter-spacing: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://www.galilion.co.il/wp-content/uploads/2018/06/%D7%A8%D7%A7%D7%A2-%D7%9B%D7%9C%D7%9C%D7%99-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/10;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.items {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    align-content: center;
+}
+
+.section {
+    display: grid;
+    grid-template-rows: 50px 2fr;
+    top: 0;
+    background-color: rgb(173, 168, 161);
+    padding: 30px 30px;
+    gap: 20px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 40px;
+    border-radius: 5px;
+}
+
+.south {
+    background-color: rgb(202, 194, 183);
+}
+
+.central {
+    background-color: rgb(157, 152, 146);
+}
+
+.jerusalem {
+    background-color: rgb(173, 168, 161);
+}
+
+.area {
+    background-color: #f2f2f2;
+    justify-self: center;
+    position: relative;
+    width: 95%;
+    border-radius: 5px;
+}
+
+/* </main> */
+
+/* <footer> */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #4b4848;
+    color: black;
+    padding: 20px;
+}
+
+.footer_conteiner {
+    justify-content: center;
+}
+
+.owners {
+    text-align: center;
+    color: #cccccc;
+    margin-top: 5px;
+}
+
+.owners h3 {
+    letter-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.owners table {
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.owners table th {
+    background-color: rgb(8, 8, 8);
+}
+
+.owners table td,
+.owners table th {
+    padding: 5px;
+    border: 1px solid #fff;
+}
+
+/* </footer> */
+
+/* <responsive> */
+
+@media screen and (max-width:800px) {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    li {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .section {
+        width: 80%;
+    }
+
+    .items {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3, 1fr;
+    }
+
+
+    .logo_text {
+        font-size: x-large;
+        letter-spacing: normal;
+    }
+
+
+
+    #one,
+    #two {
+        border-bottom: 1px solid gray;
+    }
+
+    #two {
+        border-right: none;
+    }
+
+    #two,
+    #four {
+        margin-right: 10%;
+    }
+
+}
+
+/* </responsive> */

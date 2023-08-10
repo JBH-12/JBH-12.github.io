@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(189, 173, 153);
+    height: 100%;
+}
+
+.video-container {
+    display: flex;
+}
+
+.video-container iframe {
+    flex: 1;
+    height: 750px;
+    margin: 10px;
+    border: solid 5px rgb(196, 206, 181);
+}
+
+
+
+
+
+/* מיקום הכפתורים*/
+.buttons-wrapper {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+
+/* עיצוב כללי של הכפתור */
+.btn {
+
+    padding: 10px 20px;
+    
+    border: none;/* מסיר גבולות */
+    border-radius: 4px;
+    font-size: 40px;
+}
+
+/* מרווח בין שני הכפתורים */
+.btn:first-child {
+    margin-right: 15px;
+}
+
+.btn:hover {
+    background: #eee;
+}

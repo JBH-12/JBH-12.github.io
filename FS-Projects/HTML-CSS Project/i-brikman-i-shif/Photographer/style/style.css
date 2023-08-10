@@ -1,0 +1,474 @@
+body {
+
+  font-family: cursive;
+  line-height: 1.6;
+  /* גובה שורה */
+  color: #c69611;
+  background-color: black;
+  opacity: 0.8;
+  background-blend-mode: multiply;
+  margin: 0;
+  padding: 0;
+  border: 10px solid #c5dee6;
+  display: grid;
+  grid-template-areas:
+    /* הגדרת אזורי גריד */
+    "header"
+    "nav"
+    "main"
+    "footer";
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+
+  background-image: url(/images/camera.jpg);
+  /* רקע תמונה */
+
+  animation: focus-in 2s forwards;
+  /* אנימציית מיקוד */
+
+  background-position: center;
+  /* מיקום רקע למרכז */
+
+  font-size: 80px;
+  /* גודל פונט כותרת */
+
+  background-color: #110c0c;
+  /* צבע רקע */
+
+  text-align: center;
+  /* מיקום טקסט למרכז */
+
+  border: 5px solid #c89292;
+  /* מסגרת */
+
+}
+
+
+
+
+
+/* הגדרת אנימציית מיקוד */
+@keyframes focus-in {
+
+  from {
+    transform: scale(1.5);
+    /* הגדלה */
+    filter: blur(4px);
+    /* טשטוש */
+  }
+
+  to {
+    transform: scale(1);
+    /* חזרה לגודל מקורי*/
+    filter: blur(0);
+    /* הסרת טשטוש */
+  }
+
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
+  background-image: url('/images/fotocamera.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left 10% bottom 20%;
+  border: 5px solid white;
+  background-color: rgba(0, 0, 0, 0.8);
+
+
+
+}
+
+
+nav ul {
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* גופן */
+  font-style: oblique;
+  /* סגנון איטי */
+  font-size: 10px;
+  /* גודל גופן */
+  /* מרווח חיצוני */
+  text-align: center;
+  /* מיקום טקסט למרכז */
+
+}
+
+nav li {
+  display: inline;
+  /* פריטי רשימה כטקסט רץ */
+
+  margin: 0 10px;
+  /* מרווח בין פריטים */
+}
+
+nav li:hover {
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  /* הסרת קו תחתון */
+  color: gold;
+  /* צבע קישורים */
+  font-size: 45px;
+  text-shadow: 1px 1px 2px #333;
+
+  margin: 0 20px;
+  /* מרווח בין פריטים */
+
+}
+
+main {
+  padding: 10px;
+  /* פדינג פנימי */
+}
+
+section {
+  font-size: 20px;
+  /* גודל גופן */
+  border: 1px solid #ccc;
+  /* מסגרת */
+  padding: 10px;
+  /* פדינג פנימי */
+  margin-bottom: 20px;
+  /* מרווח תחתון */
+  position: relative;
+  /* מיקום יחסי */
+}
+
+img {
+  width: 100%;
+  /* רוחב מלא */
+  border-radius: 20%;
+  margin: 20px;
+  border-style: groove;
+  border-width: 15px;
+  box-shadow: 0 0 8px rgba(246, 246, 9, 0.8);
+  z-index: 1;
+  transition: transform 1s ease-in-out;
+}
+
+img:hover {
+  width: 550px;
+  height: 500px;
+  border: 7px solid silver;
+  transform: scale(1.1);
+
+}
+
+.photo {
+  font-size: 30px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  /* צבע רקע */
+  padding: 10px;
+  /* פדינג */
+  text-align: center;
+  /* מיקום טקסט למרכז */
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#gallery .photo {
+  display: inline;
+  /* תצוגת בלוק פנימיים */
+  width: 33%;
+  /* רוחב */
+  text-align: center;
+  /* מיקום טקסט למרכז */
+  vertical-align: top;
+  /* יישור למעלה */
+  margin: 20px;
+}
+
+table {
+  margin: auto;
+  /* מרכוז הטבלה */
+  width: 80%;
+  /* רוחב */
+}
+
+th,
+td {
+  color: white;
+  /* צבע טקסט */
+  width: 150px;
+  /* רוחב עמודה */
+  font-size: 25px;
+  /* גודל פונט */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* גופן */
+  border: 3px solid yellow;
+  /* גבולות */
+  background-color: black;
+  /* צבע רקע */
+  padding: 25px;
+  /* פדינג תא */
+  text-align: center;
+  /* מיקום טקסט למרכז */
+}
+
+tr:first-child td {
+  background-color: black;
+  /* צבע רקע שורה ראשונה */
+}
+
+td:first-child {
+  background-color: black;
+  /* צבע רקע עמודה ראשונה */
+}
+
+th {
+  background-color: white;
+  /* צבע רקע כותרת */
+}
+
+#price {
+  font-size: 45px;
+  /* גודל פונט */
+  text-align: center;
+  /* מיקום טקסט למרכז */
+}
+
+#events {
+  text-align: center;
+  font-size: 50px;
+  text-indent: 2px;
+  line-height: 1.6;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about {
+  text-align: center;
+  font-size: 45px;
+  line-height: 1.3;
+  /* גובה שורה */
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#detail {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+form {
+  color: #000;
+  text-align: right;
+  max-width: 400px;
+  /* רוחב מקסימלי */
+  margin: 0 auto;
+  /* מרכוז */
+  padding: 20px;
+  /* פדינג פנימי */
+  background-color: #ffffff;
+  /* צבע רקע */
+  border: 1px solid #ddd;
+  /* מסגרת */
+  border-radius: 5px;
+  /* עיגול פינות */
+  box-shadow: 0 0 10px rgba(232, 206, 11, 0.1);
+  /* צל */
+}
+
+label {
+  display: block;
+  /* תצוגת בלוק */
+  margin-bottom: 10px;
+  /* מרווח תחתון */
+  color: #eccb0b;
+  /* צבע טקסט */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1b1c16;
+  /* מסגרת */
+  border-radius: 3px;
+  /* עיגול פינות */
+  font-size: 16px;
+  /* גודל פונט */
+}
+
+input[type="submit"] {
+  background-color: #f0af21;
+  /* צבע רקע */
+  color: #fff;
+  /* צבע טקסט */
+  cursor: pointer;
+  /* סמן יד */
+  transition: background-color 0.2s;
+  /* אנימצית שינוי צבע רקע */
+}
+
+input[type="submit"]:hover {
+  background-color: #eddf8d;
+  /* צבע רקע הובר */
+}
+
+#words {
+  font-size: 40px;
+  /* גודל פונט */
+  color: yellow;
+  /* צבע טקסט */
+
+}
+
+/* עיצוב למחשב */
+@media (min-width: 768px) {
+
+
+  header {
+    font-size: 80px;
+    border: 5px solid #c89292;
+  }
+
+  nav {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  nav a {
+    font-size: 40px;
+  }
+
+  
+  .photo p {
+    font-size: 20px;
+  }
+
+
+  #gallery .photo {
+    width: 500px;
+    align-items: center;
+    align-self: center;
+  }
+
+  table {
+    width: 80%;
+    font-size: 18px;
+  }
+
+}
+
+/* עיצוב לטאבלט */
+@media (max-width: 768px) {
+
+  header {
+    font-size: 50px;
+    border: 3px solid #c89292;
+  }
+
+  nav a {
+    font-size: 24px;
+
+  }
+
+  nav li {
+    font-size: 16px;
+
+  }
+
+  img {
+    display: block;
+    width: 80%;
+    /* רוחב מלא */
+    border-radius: 20%;
+    margin: 20px;
+    border-style: groove;
+    border-width: 15px;
+    box-shadow: 0 0 8px rgba(246, 246, 9, 0.8);
+    z-index: 1;
+    transition: transform 1s ease-in-out;
+  }
+
+  img:hover {
+    width: 350px;
+    height: 300px;
+    transition: width 1s ease-out, height 1s ease-out;
+    border: 7px solid silver;
+    transform: scale(0.8);
+
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #gallery .photo {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #events {
+    font-size: 22px;
+  }
+
+  .about {
+    font-size: 19px;
+  }
+}
+
+/* עיצוב לסמארטפון */
+@media (max-width: 480px) {
+
+  header {
+    font-size: 30px;
+    border: 2px solid #c89292;
+  }
+
+  nav {
+    display: flex;
+
+    font-size: 22px;
+  }
+
+  nav li {
+    font-size: 14px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photo {
+    width: 100%;
+  }
+
+  table {
+    margin: auto;
+    font-size: 12px;
+  }
+
+}

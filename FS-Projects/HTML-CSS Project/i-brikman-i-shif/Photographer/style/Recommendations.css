@@ -1,0 +1,63 @@
+body{
+background-color: antiquewhite;
+
+}
+/* עיצוב כותרת הדף */
+h2 {
+    color: #25a4e9;
+    font-size: 100px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* עיצוב ציטוט */
+blockquote {
+    font-size: 70px;
+
+    font-style: italic;
+    color: #688e9c;
+    border: 14px solid #666;
+    padding-left: 10px;
+}
+
+/* עיצוב שם הממליץ */
+p {
+    font-size: 80px;
+    margin: 10px 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* עיצוב המלצה */
+.testimonial {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 3px solid #dddddd39;
+    border-radius: 15px;
+}
+
+/* מיקום הכפתורים*/
+.buttons-wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* עיצוב כללי של הכפתור */
+.btn {
+
+    padding: 10px 20px;
+    
+    border: none;/* מסיר גבולות */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+/* מרווח בין שני הכפתורים */
+.btn:first-child {
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background: #eee;
+}

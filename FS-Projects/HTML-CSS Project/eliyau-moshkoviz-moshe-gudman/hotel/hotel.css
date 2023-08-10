@@ -1,0 +1,122 @@
+
+/* קישור להזמנה בתחתית העמוד */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 15px;
+    background-color: rgb(58, 57, 57);
+}
+main h1 {
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+    background-color: black;
+}
+main .order {
+    border: 1px black solid;
+    background-color: gold;
+    padding: 5px;
+    border: 2px black solid;
+    border-radius: 10%;
+    transition: all;
+    transition-duration: 1s;
+}
+main .order:hover {
+    background-color: forestgreen;
+    padding: 15px;
+
+}
+main .order a {
+    color: black;
+    font-size: 40px;
+    font-style: inherit;
+}
+/* תמונת במרכז העמוד */
+.lobby img {
+    width: 100%;
+    height: 700px;
+    margin: 0;
+}
+/* לקבלת מידע */
+.info {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgb(58, 57, 57);
+    font-size: 25px;
+    margin: 0;
+
+}
+.info input, .info select {
+    width: 150px;
+    height: 40px;
+    padding: 1px 2px;
+    text-align: center;
+    border: 0;
+    margin: 0;
+    background-color: rgb(215, 215, 241);
+  
+}
+/* מידע בתמונות */
+section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:  black;
+
+}
+
+section div {
+    padding: 30px;
+}
+section h1 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-style: inherit;
+    letter-spacing: 3px;
+}
+section h3 {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+}
+/* פסקה וסרט */
+bottom {
+    display: flex;
+    background-color: rgb(255, 220, 255);
+    justify-content: space-around;
+    align-items:center;
+    padding: 30px;
+    
+}
+bottom h1 {
+    font-size: 40px;
+    color: black;
+    
+}
+bottom p {
+    direction: rtl;
+    text-align: justify
+}
+bottom div {
+    width: 40%;
+    padding: 3opx;
+    text-align: center;  
+    font-size: 25px;
+
+}
+@media screen and (max-width: 1150px) {
+    section, main, bottom p, bottom h1, .info select  {
+       display: none;
+    }
+    .info h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+   
+}

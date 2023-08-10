@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: calibri;
+}
+/* מחיקת קו לכל הלינקים */
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration:underline white 3px;
+}
+header .manu span:hover {
+    font-size: 50px;
+}
+header .logo img:hover {
+    width: 240px;
+    height: 266px;
+}
+/* החלק העליון של העמוד לוגו ותפריט */
+header {
+    display: grid;
+    background-color: black;
+    width: 100%;
+    grid: auto / 200px 1fr;
+}
+header .logo {
+    padding: 15px;
+}
+header .logo img{
+    width: 120px;
+    height: 133px;
+}
+header .manu {
+    justify-self: end;
+    align-self: center;
+    padding-right: 25px;
+}
+header .manu span {
+    color: rgb(211, 199, 135);
+    padding: 15px;
+    font-size: 35px;
+    font-style:unset;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+
+/* טופס למילוי פרטים */
+rooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+   
+}
+rooter input {
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    padding: 3px;
+    margin: 15px;
+    background-color:whitesmoke;
+    
+   
+}
+p select { 
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    direction: rtl;
+    padding: 3px;
+    color: goldenrod;
+    background-color: black;
+    
+}
+/* ממרכז כיתוב בתוך הטפסים */
+form {
+    text-align: center;
+}
+
+rooter div {
+    padding: 15opx;
+    font-size: 25px;
+
+}
+rooter h1, h3 {
+   color: white;
+   margin: 10px;
+}
+#submit {
+    background-color: yellow;
+    font-size: large;
+    height: 70px;
+    width: 150px;
+    border: 2px black solid;
+    border-radius: 10%;
+
+}
+@media screen and (max-width: 1150px) {
+    header a {
+        display: block;
+    }
+    section, main, bottom p, bottom h1, .info select  {
+       display: none;
+    }
+    .info h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+   
+}

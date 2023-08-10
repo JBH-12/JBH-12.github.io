@@ -1,0 +1,16 @@
+#info-links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 200px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+
+img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

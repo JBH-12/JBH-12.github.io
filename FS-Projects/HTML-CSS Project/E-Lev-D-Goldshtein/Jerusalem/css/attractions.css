@@ -1,0 +1,54 @@
+#my-attractions {
+    background-color: rgb(246, 240, 234);
+    display: grid;
+    border: double burlywood;
+    grid-template-columns: 20% 30% 20% 30%;
+    grid-template-rows: 200px 200px;
+    grid-gap: 3px;
+    padding: 30px;ןחןח
+}
+
+
+
+.pic-my-attractions {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 1px rgb(166, 199, 129);
+    border-radius: 2px;
+    grid-auto-rows: minmax(auto auto);
+}
+
+.p-my-attractions {
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 6px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 1px burlywood;
+    border-radius: 2px;
+    font-size: 21px;
+    text-align: center;
+    text-justify: center;
+}
+
+#end-attract {
+    margin-top: 50px;
+    margin-bottom: 400px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1281px) {
+    #my-attractions {
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 250px 250px 250px 250px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #my-attractions {
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 250px 250px 250px 250px 250px 250px 250px;
+    }
+}

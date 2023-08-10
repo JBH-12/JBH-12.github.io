@@ -1,0 +1,39 @@
+body {
+    direction: rtl;
+    background-color: rgb(245, 239, 230);
+}
+
+#all-body {
+
+    z-index: -1;
+    display: grid;
+    grid-template-rows: 6fr;
+    place-content: center;
+    grid-auto-rows: minmax(auto, auto)
+}
+
+.title-h2 {
+    font-size: 40px;
+    background-image: url(/images/תמונה\ חתוכה\ לתפריט.jpg);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 23;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(89, 85, 81);
+    border: 2px solid;
+}
+
+
+
+#end-culinar {
+    margin-bottom: 550px;
+}

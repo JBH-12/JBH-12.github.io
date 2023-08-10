@@ -1,0 +1,35 @@
+body {
+    direction: rtl;
+}
+
+div {
+    height: 100%;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid black;
+    text-align: center;
+
+
+
+}
+
+#backgroundd {
+    position: fixed;
+    background-color: rgb(187, 199, 199);
+    background-image: url(/images/טיילת\ החומות.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: calc(0.2);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    text-align: center;
+    margin: 10px;
+    border: 0.5px rgb(12, 17, 37) solid;
+
+}

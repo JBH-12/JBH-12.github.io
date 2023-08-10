@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style-order-tours.css">
+</head>
+
+<body>
+
+    <div id="backgroundd"></div>
+    <h1 style="text-align: center;">הזמנת סיור</h1>
+    <div>
+        <form action="" method="get">
+
+            <input type="text" placeholder="first name" id="fname" name="fname" minlength="2" maxlength="20"><br>
+
+
+            <input type="text" placeholder="last name" id="lname" name="lname" minlength="2" maxlength="20"><br>
+
+            <select name="indicativ">
+                <option value="050">050</option>
+                <option value="052">052</option>
+                <option value="053">053</option>
+                <option value="054">054</option>
+                <option value="055">055</option>
+            </select>
+
+
+            <input type="text" placeholder="phone number" id="phonenumbet" name="number" pattern="[0-9]{7}"><br>
+
+
+
+            <input type="email" id="email" name="email" placeholder="email adresse"><br>
+
+            <input type="date" id="dateDepart" name="dateDepart"><br>
+
+
+            <label for="תחנת עלייה">בחר תחנת עלייה</label>
+            <select name="בחר תחנה" id="בחר תחנה">
+                <option value=""></option>
+                <option value="ממליא">ממילא</option>
+                <option value="שער יפו">שער יפו</option>
+                <option value="הרובע היהודי">הרובע היהודי</option>
+                <option value="הכותל המערבי">הכותל המערבי</option>
+                <option value="הר ציון">הר ציון</option>
+
+            </select>
+            <label for="תחנת ירידה">בחר תחנת ירידה</label>
+            <select name="בחר תחנה" id="בחר תחנה">
+                <option value=""></option>
+                <option value="ממליא">ממילא</option>
+                <option value="שער יפו">שער יפו</option>
+                <option value="הרובע היהודי">הרובע היהודי</option>
+                <option value="הכותל המערבי">הכותל המערבי</option>
+                <option value="הר ציון">הר ציון</option>
+
+            </select>
+
+            <p>שתייה לבחירה</p>
+            <label for="tea">תה</label>
+            <input type="radio" id="food" name="drink">
+
+            <label for="Water">מים</label>
+            <input type="radio" id="food" name="drink">
+
+            <label for="Espresso">אספרסו</label>
+            <input type="radio" id="food" name="drink" value="milk">
+
+
+            <input type="text" id="special" placeholder="Note" style="text-align: left; height: 75px; width: 80%;"
+                name="specialNote"><br>
+
+
+            <label for="creditCard">בחירת כ.אשראי</label>
+            <select name="chooscard" id="chooscar"><br>
+                <option value=""></option>
+                <option value="visa">visa</option>
+                <option value="diners">diners</option>
+                <option value="max">max</option>
+                <option value="americanExpress">americanExpress</option>
+                <option value="isracard">isracard</option>
+
+            </select><br>
+
+
+
+
+            <input type="text" placeholder="Number of credit card" id="creditCard" name="creditCard"
+                pattern="[1-9]{1}[0-9]{15}"><br>
+
+
+            <input type="text" placeholder="First name" id="Cardfname" name="firstName" pattern="{a-z,A-Z}[20]"><br>
+
+            <input type="text" placeholder="Last name" id="Cardlname" name="lastName" pattern="{a-z,A-Z}[20]"><br>
+
+            <label for="selectMounth">Exp date</label>
+
+
+            <select name="mountEx" id="selectMounth"><br>
+
+                <option value=""></option>
+                <option value="jan">jan</option>
+                <option value="fev">fev</option>
+                <option value="mar">mar</option>
+                <option value="avr">avr</option>
+                <option value="mai">mai</option>
+                <option value="jun">jun</option>
+                <option value="jui">jui</option>
+                <option value="aou">aou</option>
+                <option value="sep">sep</option>
+                <option value="oct">oct</option>
+                <option value="nov">nov</option>
+                <option value="dec">dec</option>
+            </select>
+
+            <select name="chooscard" id="selectMounth"><br>
+                <option value=""></option>
+                <option value="">01</option>
+                <option value="">02</option>
+                <option value="">03</option>
+                <option value="">04</option>
+                <option value="">05</option>
+                <option value="">06</option>
+                <option value="">07</option>
+                <option value="">08</option>
+                <option value="">09</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+                <option value="">31</option>
+            </select><br>
+
+            <label for="cvv">cvv</label>
+            <input type="text" placeholder="Enter your cvv" id="cvv" name="cvv" pattern="[0-9]{4}"><br>
+
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>

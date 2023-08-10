@@ -1,0 +1,33 @@
+#all-footer {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: rgb(67, 72, 72);
+    border: solid 2px;
+    border-radius: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#conect {
+    color: rgb(233, 233, 226);
+}
+
+th,
+td {
+
+    padding: 10px;
+    border: solid rgb(79, 78, 80) 1px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(233, 233, 226);
+}
+
+li {
+    font-size: 20px;
+    color: rgb(233, 233, 226);
+}
+
+#oc {
+    width: 50px;
+}

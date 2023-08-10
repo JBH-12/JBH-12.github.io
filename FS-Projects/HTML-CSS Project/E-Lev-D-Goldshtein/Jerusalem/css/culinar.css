@@ -1,0 +1,80 @@
+#all-culinary {
+    margin-bottom: 10px;
+}
+
+#culinary-img {
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+
+}
+
+#culinary-content {
+    width: 100%;
+    height: 900px;
+}
+
+#culinary-content p {
+    font-size: 50px;
+    font-style: italic;
+    color: rgb(112, 48, 48);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#restaurant {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    justify-content: auto;
+    gap: 10px;
+}
+
+.a-resturant {
+    background-color: rgb(165, 169, 120);
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1;
+}
+
+.img-restaurant {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+#end-culinar {
+    margin-bottom: 380px;
+}
+
+@media only screen and (max-width: 768px) {
+    #restaurant {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: space-evenly;
+        gap: 3px;
+    }
+
+    #culinary-content {
+        height: auto;
+    }
+
+    #culinary-content p {
+        font-size: 30px;
+    }
+
+    #culinary-img {
+        display: none;
+
+    }
+
+    .img-restaurant {
+        width: 150px;
+        height: 150px;
+    }
+
+}

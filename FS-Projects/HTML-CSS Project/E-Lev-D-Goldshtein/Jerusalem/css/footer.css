@@ -1,0 +1,11 @@
+#all-footer{
+    display: flex;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    #my-table{
+        display: none;
+    }
+
+}

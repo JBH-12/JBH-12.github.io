@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cards</title>
+
+  <link rel="stylesheet" href="css/styleZoo.css" />
+  <link rel="stylesheet" href="css/styleCards.css" />
+  <link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 800px)" />
+</head>
+
+<body>
+
+  <!-- תבנית הדף:  דיב קונטיינר שמכיל 5 דיבים -->
+
+  <div class="container">
+
+    <div class="header">
+      <header>WILD ZOO</header>
+    </div>
+
+    <div class="nav">
+      <nav>
+        <ul>
+          <li><a href="index.html">home page</a></li>
+          <li><a href="">about us</a></li>
+          <li>
+            <a target="_blank" href="activity time.html">activity time</a>
+          </li>
+          <li><a target="_blank" href="cards.html">cards</a></li>
+          <li><a href="#comments">contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main">
+      <main>
+        <form method="get" id="form1">
+          <fieldset>
+            <h3>order tickets</h3>
+            <label for="first-name">enter your first name:
+              <input id="first-name" type="text" minlength="2" maxlength="20" required /></label>
+            <label for="last-name">enter your last name:
+              <input id="last-name" type="text" minlength="2" maxlength="20" required /></label>
+            <label for="phone-number">enter your phone number:
+              <input id="phone-number" type="number" pattern="[0-9]{10}" required /></label>
+            <label for="email">enter your email: <input id="email" type="email" required /></label>
+          </fieldset>
+
+          <fieldset>
+            <h3>credit information</h3>
+            <label for="credit-card">Card Type
+              <select name="credit-card" id="credit-card">
+                <option value="">(selct one)</option>
+                <option value="visa">visa</option>
+                <option value="american express">american express</option>
+                <option value="isracard">isracard</option>
+              </select>
+            </label>
+            <label for="Credit number">Credit number:
+              <input id="Credit number" type="number" name="Credit number" maxlength="16" minlength="16"
+                required /></label>
+            <label for="first-name">first name of the cardholder:
+              <input id="first-name" type="text" minlength="2" maxlength="20" name="first-name" required /></label>
+            <label for="last-name">last name of the cardholder:
+              <input id="last-name" name="last-name" type="text" minlength="2" maxlength="20" required /></label>
+            <label>Card validity:
+              <input id="Card validity" type="number" name="month" min="1" max="12" /><input id="Card validity"
+                type="number" name="years" min="2023" max="2030" /></label>
+            <label for="cvv">cvv:
+              <input id="cvv" type="number" name="cvv" maxlength="4" minlength="3" /></label>
+          </fieldset>
+          <input type="submit" value="submit" />
+        </form>
+      </main>
+    </div>
+
+    <div id="comments" class="comments">
+      <h3>CEO's statement:</h3>
+      <p>
+        I am proud of Safari and see it as a site that gives true love to
+        animals and nature. I promise to invest all my energy in this amazing
+        animal gem. In my vision, I see the visit to the safari becoming a
+        must for every school..."
+      </p>
+    </div>
+
+    <div class="footer">
+      <footer>
+        <div class="scroll"><a href="#">scroll up</a></div>
+        <p>Copyright © 2023 My Website. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

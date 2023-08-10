@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZOO</title>
+  <link rel="stylesheet" href="css/styleZoo.css" />
+  <link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 800px)" />
+</head>
+
+<body>
+
+  <div class="setting"></div> <!--מיועד לאנימציה שתחת הכותרת-->
+
+  <!-- תבנית הדף:  דיב קונטיינר שמכיל 6 דיבים -->
+
+  <div class="container" class="setting">
+
+    <div class="header">
+      <header>WILD ZOO</header>
+    </div>
+
+    <div class="nav">
+      <nav>
+        <ul>
+          <li><a href="index.html">home page</a></li>
+          <li><a href="#about-us">about us</a></li>
+          <li>
+            <a target="_blank" href="activity time.html">activity time</a>
+          </li>
+          <li><a target="_blank" href="cards.html">cards</a></li>
+          <li><a href="#comments">contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="aside">
+      <aside>Our other branches</aside>
+      <p>
+        1. The Ramat Gan Zoological Center, 1000 dunams of wild nature in the
+        urban center of the State of Israel, for the website
+        <a href="https://www.safari.co.il/">click here</a>
+      </p>
+      <p>
+        2. The Biblical Zoo is located in a beautiful valley in the southwest
+        of Jerusalem. In the garden there is a large lake and waterfalls
+        connected between them. Extensive grassy areas and plenty of pleasant
+        shaded corners. The garden is built on two levels along which the
+        animals are located, for the website
+        <a href="https://www.jerusalemzoo.org/">click here</a>
+      </p>
+    </div>
+
+    <div class="main">
+      <main>
+        <iframe src="https://www.jerusalemzoo.org/" frameborder="0"></iframe>
+
+        <img src="css/media/בהמות בסוואנה.jpg" alt="סוואנה" />
+        <video class="video" controls>
+          <source src="css/media/Welcome to the San Diego Zoo Safari Park.mp4" type="video/mp4" />
+        </video>
+      </main>
+    </div>
+
+    <div id="comments" class="comments">
+      <form action="#">
+        <h2>Sign up for updates from the zoo:</h2>
+        <label for="first-name"><input id="first-name" type="text" minlength="2" maxlength="20" name="first-name"
+            placeholder="first name" required /></label>
+        <label for="last-name"><input id="last-name" type="text" minlength="2" maxlength="20" name="last-name"
+            placeholder="last name" /></label>
+        <label for="phone-number"><input id="phone-number" type="number" pattern="[0-9]{10}" name="phone-number"
+            placeholder="phone number" required /></label>
+        <label for="email"><input id="email" type="email" placeholder="email" name="email" required /></label>
+        <input type="submit" value="submit" />
+      </form>
+      <div class="scroll"><a href="#">scroll up</a></div>
+    </div>
+
+    <div class="footer">
+      <footer id="about-us">
+        <p>Copyright © 2023 My Website. All rights reserved.</p>
+        <p>The creators of the page: Moshe Hadar and Meir Vitkin</p>
+        <p>For more details and ordering work, please contact us</p>
+        <p>Email: moshehadar008@gmail.com</p>
+        <p>Phone: 0528616622.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

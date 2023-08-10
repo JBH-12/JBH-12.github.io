@@ -1,0 +1,45 @@
+/* דורס את העיצוב המקורי
+   .רק בשביל השינויים הנצרכים  */
+
+p {
+    font-size: 25px;
+    text-align: center;
+    width: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+.main {
+    grid-column: 1 / 11;
+}
+
+.activity-time {
+    text-align: center;
+}
+
+table {
+    padding: 50px;
+    width: 900px;
+    height: 500px;
+}
+
+th,
+tr,
+td {
+    border: 2px solid;
+    padding: 2px 4px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.opening-hours {
+    font-family: fantasy;
+    margin-top: 100px;
+}
+
+.opening-hours2 {
+    display: none;
+}

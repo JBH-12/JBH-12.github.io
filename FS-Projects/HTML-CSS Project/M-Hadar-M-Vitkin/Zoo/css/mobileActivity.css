@@ -1,0 +1,15 @@
+h2,
+h3,
+p,
+header {
+    margin-left: 20px;
+}
+
+table {
+    display: none;
+}
+
+.opening-hours2 {
+    display: inline;
+    font-size: 35px;
+}

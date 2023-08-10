@@ -1,0 +1,168 @@
+/* סדר הדברים: מתחת לכל קלאס מופיע הסטייל 
+    .לאלמנטים והתכונות שנמצאים/ות בתוכו */
+
+body {
+    margin: 0;
+    display: flex;
+    background-color: blanchedalmond;
+    color: #8c5555;
+}
+
+.container {
+    display: grid;
+    grid-template: 280px 200px minmax(950px, auto) 400px 150px / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    flex-wrap: initial;
+    font-size: 35px;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-family: fantasy;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+}
+
+.header {
+    grid-column: 1 / 11;
+    font-size: 190px;
+    font-family: fantasy;
+    text-align: center;
+    position: relative;
+    height: 100%;
+    border-bottom: 15px solid black;
+    animation: img 12s linear infinite;
+    color: antiquewhite;
+}
+
+.nav {
+    grid-column: 1 / 11;
+    font-family: fantasy;
+    border-bottom: 10PX solid black;
+    padding-top: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 45px;
+    border-right: 5px solid;
+    padding-right: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #8c5555;
+    animation: hover 0.2s 0.2s linear 1 forwards;
+}
+
+.aside {
+    grid-column: 1 / 3;
+    overflow-x: auto;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.aside p {
+    font-size: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    grid-column: 3 / 11;
+    padding-left: 0px;
+    overflow: hidden;
+}
+
+.comments {
+    grid-column: 1 / 11;
+    text-align: center;
+    font-size: 25px;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.footer {
+    grid-column: 1 / 11;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+.scroll {
+    position: absolute;
+    right: 20px;
+}
+
+input,
+select,
+::placeholder {
+    min-height: 3em;
+    border-radius: 7px;
+    background-color: brown;
+    color: bisque;
+}
+
+iframe,
+img {
+    width: 600px;
+    height: 400px;
+}
+
+.video {
+    width: 99%;
+    height: 40%;
+    padding-top: 20px;
+}
+
+.setting {
+    background-image: url('media/רקע\ ספארי.webp');
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+    background-size: cover;
+}
+
+@keyframes img {
+    0% {
+        background-image: url('media/בהמות\ בסוואנה.jpg');
+    }
+
+    40% {
+        background-image: url('media/שקיעה\ זברה.webp');
+    }
+
+    75% {
+        background-image: url('media/רקע\ ספארי.webp');
+    }
+
+    100% {
+        background-image: url('media/בהמות\ בסוואנה.jpg');
+    }
+}
+
+@keyframes hover {
+    0% {
+        font-size: 100%;
+    }
+
+    100% {
+        font-size: 135%;
+    }
+}

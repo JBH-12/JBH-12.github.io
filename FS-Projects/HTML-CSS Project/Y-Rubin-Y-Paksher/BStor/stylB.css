@@ -1,0 +1,164 @@
+/* גליון סטייל משני לעמוד ראשי */
+
+
+ /*  ססניפים והזמנות   */
+ #Container1 {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-top: 1.5%;
+    background-color: rgba(165, 29, 29, 0.867);
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+.InternalLink {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xxx-large;
+
+
+}
+/* ----- */
+/* רקע */
+
+#container2 {
+    width: 100%;
+
+}
+#sentens {
+    color: rgb(222, 198, 167);
+    width: 880px;
+    position: relative;
+    top: -40px;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation-name: k;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes k {
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+/* ----- */
+
+/* ניווט */
+nav {
+    width: 100%;
+    height: 50%;
+
+
+
+}
+
+.menu {
+    height: 140px;
+    width: 140px;
+
+}
+
+h3 {
+    padding: 4%;
+
+}
+
+#right {
+    border-top: 2px solid;
+    border-right: 0px solid;
+}
+/* ----- */
+
+
+
+/* גריד תמוות ומחירים */
+#gemara {
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    display: grid;
+
+    align-items: center;
+    border: 3px solid brown;
+    margin: 8%;
+    grid-auto-flow: column;
+    justify-content: center;
+
+
+}
+
+h4 {
+    font-size: 30px;
+    background: none;
+    ;
+}
+
+#mishna {
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    display: grid;
+
+    align-items: center;
+    border: 3px solid brown;
+    margin: 8%;
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+#alocha {
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    display: grid;
+
+    align-items: center;
+    border: 3px solid brown;
+    margin: 8%;
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+#musar {
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    display: grid;
+
+    align-items: center;
+    border: 3px solid brown;
+    margin: 8%;
+    grid-auto-flow: column;
+    justify-content: center;
+}
+/* ----- */
+
+/* באנר תחתון */
+h6 {
+    font-size: large;
+    margin-top: 7%;
+
+
+}
+
+ul {
+    font-size: large;
+}
+
+#detalis {
+    margin-top: 12%;
+}
+/* ----- */

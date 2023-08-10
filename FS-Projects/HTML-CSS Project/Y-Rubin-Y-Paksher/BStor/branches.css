@@ -1,0 +1,213 @@
+/* גליון סטייל לעמוד הסניפים */
+
+
+body {
+    direction: rtl;
+}
+/* באנר עליון */
+
+#header {
+    display: flex;
+
+    justify-content: space-around;
+    border-bottom: 4px double;
+    background: linear-gradient(45deg, #FFD900, brown);
+
+}
+
+#logo {
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+
+
+}
+
+
+#contact {
+    display: flex;
+    margin-top: 40px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: brown;
+
+}
+/* ---- */
+/* אנימציה למשפט  */
+
+#a {
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function:ease-in-out;
+    width: 90%;
+    text-align: end;
+
+}
+
+@keyframes example {
+    from {
+        color: #e7aa78;
+        
+    }
+
+    to {
+        color: #ca1a1a;
+    }
+    0% {transform:translate(4.2%, 0);}
+    100% {transform:translate(30%, 0);}
+
+
+}
+/* ---- */
+
+
+
+/* טבלה */
+
+ul {
+    text-align: center;
+
+
+}
+
+th,
+tr,
+td {
+    padding: 2px;
+    text-align: center;
+    border: 1px solid brown;
+    width: 2%;
+}
+
+th {
+    background: linear-gradient(45deg, #FFD900, brown);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#table {
+    display: inline-block;
+    padding-top: 2%;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: x-large;
+    padding-bottom: 10%;
+
+
+}
+/* ---- */
+
+/* כפתור הבית */
+#home {
+    width: 25%;
+    height: 40px;
+    margin-bottom: 160px;
+    margin-right: 40%;
+    padding-top: 10px;
+
+    font-size: xx-large;
+    text-align: center;
+    border: 5px solid brown;
+    background: linear-gradient(45deg, brown, #FFD900);
+}
+/* ---- */
+/* באנר תחתון */
+
+
+#container4 {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(45deg, #FFD900, brown);
+    ;
+    justify-content: space-around;
+}
+
+video {
+    height: 75%;
+    width: 100%;
+    margin-top: 1.5%;
+    margin-right: 3%;
+
+
+
+}
+
+
+h6 {
+    font-size: x-large;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+h1 {
+    font-size: xxx-large;
+    padding: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+}
+
+ul {
+    list-style-type: none;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#detalis {
+    margin-top: 100px;
+}
+/* ----- */
+
+@media screen and (max-width:950px) {
+    
+    /* גדלים בבאנר התחתון */
+
+    h6 {
+        font-size: large;
+        margin-top: 7%;
+
+
+    }
+
+    ul {
+        font-size: large;
+    }
+
+    #detalis {
+        margin-top: 12%;
+
+    }
+    /* ----  */
+/* אנימציה למשפט  */
+
+    #a {
+        animation-name: example;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        text-align: center;
+    }
+
+    @keyframes example {
+        from {
+            color: #935ee9;
+        }
+
+        to {
+            color: #cc09f3;
+        }
+
+
+    }
+/* ---- */
+}

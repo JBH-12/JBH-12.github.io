@@ -1,0 +1,275 @@
+/* גליון סטייל לעמוד ההזמנות */
+
+body {
+    direction: rtl;
+
+
+
+}
+
+/* באנר עליון */
+
+#header {
+    display: flex;
+
+    justify-content: space-around;
+    border-bottom: 4px double;
+    background: linear-gradient(45deg, #FFD900, brown);
+
+}
+
+#logo {
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+
+
+}
+
+
+#contact {
+    display: flex;
+    margin-top: 40px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: brown;
+
+}
+
+/* ---- */
+
+
+/* טופס הזמנה-form */
+
+#form {
+    background: linear-gradient(5deg, #FFD900, brown);
+    width: 40%;
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 8px solid rgb(176, 39, 39);
+    border-radius: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10%;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+
+}
+
+h3 {
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+
+}
+
+input {
+
+    text-align: center;
+    width: 250px;
+}
+
+.shiping {
+    display: inline-block;
+}
+
+.input {
+    width: 100px;
+
+}
+
+/* ----- */
+/* באנר השילוח */
+
+#containerTrackingShipment {
+    margin-right: 70%;
+    margin-top: -73.5%;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    height: 130%;
+    border: 5px solid brown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+}
+
+h2 {
+    text-decoration: underline;
+    margin-top: 10%;
+}
+
+.delivery {
+    border: 2px solid brown;
+    width: 80%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.delivery:hover {
+    background-color: brown;
+}
+
+#youtube {
+    height: 80%;
+}
+
+/* ---- */
+/* חזרה לדף הבית */
+
+#home {
+    width: 25%;
+    height: 40px;
+    margin-bottom: 65px;
+    margin-right: 40%;
+    padding-top: 10px;
+    margin-top: 250px;
+    font-size: xx-large;
+    text-align: center;
+    border: 5px solid brown;
+    background: linear-gradient(45deg, brown, #FFD900);
+}
+/* ---- */
+
+
+/* רשימת יתרונות */
+
+#list{
+    display: none;
+}
+/* ---- */
+
+
+
+
+
+
+/* באנר תחתון */
+
+#container4 {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(45deg, #FFD900, brown);
+    justify-content: space-around;
+}
+
+video {
+    height: 75%;
+    width: 100%;
+    margin-top: 1.5%;
+    margin-right: 3%;
+
+
+
+}
+
+ul {
+    list-style-type: none;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+}
+
+h6 {
+    font-size: x-large;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#detalis {
+    margin-top: 100px;
+}
+
+/* ----- */
+@media (max-width:950px) {
+
+
+    /* שינוי גודל באנר השליחה */
+
+    .delivery {
+        border: 0.5px solid brown;
+        width: 80%;
+        height: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px;
+
+    }
+
+    #containerTrackingShipment {
+        margin-right: 70%;
+        margin-top: -158.5%;
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        width: 25%;
+        height: 200%;
+        border: 5px solid brown;
+
+
+
+
+    }
+
+    .a {
+        width: 90%;
+    }
+
+    /* ---- */
+    /* רשימת מעלות */
+    #list{
+        display: flex;
+        list-style-type:decimal;
+        position: absolute;
+        margin-right: 50%;
+        margin-top: -40%;
+        font-size: large;
+        padding: 0%;
+        margin-left: 2%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 5px solid rgb(241, 245, 9);
+    }
+    /* ---- */
+
+
+    /* התאמה לתצוגה של באנר תחתון */
+
+    h6 {
+        font-size: large;
+        margin-top: 7%;
+
+
+    }
+
+    ul {
+        font-size: large;
+    }
+
+    #detalis {
+        margin-top: 12%;
+
+    }
+
+    /* ---- */
+}

@@ -1,0 +1,103 @@
+:root {
+    --A: 100vw;
+    --B: 67vh;
+    --C: 20vw;
+    --D: 20vh;
+    --E: 5vh;
+    --F: 5vw;
+}
+
+body {
+    background-color: #DDF3FF;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: stretch;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #ED1C24;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-size: calc(min(var(--E), var(--F)));
+}
+
+main {
+    width: 100%;
+    height: calc(min(var(--A), var(--B)));
+    position: absolute;
+    top: 14%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.box {
+    width: calc(min(var(--A), var(--B)));
+    height: calc(min(var(--A), var(--B)));
+    border-radius: 100%;
+    background-color: #ED1C24;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.inner {
+    width: calc(min(var(--A), var(--B)) - min(var(--C), var(--D)));
+    height: calc(min(var(--A), var(--B)) - min(var(--C), var(--D)));
+    border-radius: 100%;
+    position: absolute;
+    top: calc(min(var(--C), var(--D))/2);
+    left: calc(min(var(--C), var(--D))/2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    color: #004AAD;
+    font-size: calc(min(2*var(--E), 2*var(--F)));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover div,
+.inner:hover {
+    box-shadow: 2px 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.box:active div,
+.inner:active {
+    width: calc(min(var(--A), var(--B)) - min(var(--C), var(--D)) - min(var(--E), var(--F)));
+    height: calc(min(var(--A), var(--B)) - min(var(--C), var(--D)) - min(var(--E), var(--F)));
+    top: calc((min(var(--C), var(--D)) + min(var(--E), var(--F)))/2);
+    left: calc((min(var(--C), var(--D)) + min(var(--E), var(--F)))/2);
+    box-shadow: 3px 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: calc(min(var(--A), var(--B)));
+    height: 100%;
+}

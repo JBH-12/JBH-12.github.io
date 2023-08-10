@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור קשר</title>
+    <link rel="stylesheet" href="style/צור קשר.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <div>חזרה לעמוד הבית</div>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h2>
+                צור קשר
+            </h2>
+            <p>החירום 15 כפר סבא</p>
+            <p>03-0000000</p>
+            <div></div>
+            <hr>
+            <div>
+                <h2>או השאר לנו פרטים ונחזור אליך בהקדם</h2>
+                <form action="תודה.html" method="GET">
+                    <table>
+                        <tr>
+                            <th>
+                                <label for="name-id">שם:</label>
+                            </th>
+                            <td>
+                                <input type="text" id="name-id" name="name" placeholder="כתוב כאן את השם שלך"
+                                    required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="phone-id">טלפון:</label>
+                            </th>
+                            <td>
+                                <input type="tel" id="phone-id" name="phone" placeholder="כתוב כאן את מספר הטלפון שלך"
+                                    required pattern="[0-9]{3}-[0-9]{7}" />
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="שלח" style="width: 100%; text-align: center;">
+                </form>
+            </div>
+    </main>
+
+    <footer>
+        <img src="קבצים/מתוקן לוגו.png" alt="לוגו ש.ח.מ.">
+    </footer>
+
+</body>
+
+</html>

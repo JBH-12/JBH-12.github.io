@@ -1,0 +1,92 @@
+:root {
+    --A: 100vw;
+    --B: 67vh;
+    --C: 20vw;
+    --D: 20vh;
+    --E: 3vw;
+    --F: 3vh;
+}
+
+body {
+    background-color: #DDF3FF;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    height: calc(min(var(--A), var(--B)));
+    position: absolute;
+    top: 14%;
+}
+
+footer {
+    height: 10vh;
+    position: fixed;
+    bottom: 2%;
+    align-items: stretch;
+}
+
+footer img {
+    width: calc(min(var(--A), var(--B)));
+    height: 100%;
+}
+
+.flex-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.all-width {
+    width: 100vw;
+}
+
+.nav-link {
+    width: 23%;
+    padding: 2px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #ED1C24;
+    font-size: calc(min(var(--E), var(--F)));
+}
+
+.circle {
+    border-radius: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#navigation {
+    height: 7vh;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+#red-circle {
+width: calc(min(var(--A), var(--B)));
+    height: calc(min(var(--A), var(--B)));
+    background-color: #ED1C24;
+}
+
+#white-circle{
+    width: calc(min(var(--A), var(--B)) - min(var(--C), var(--D)));
+    height: calc(min(var(--A), var(--B)) - min(var(--C), var(--D)));
+background-color: whitesmoke;
+font-size: calc(min(var(--C), var(--D)));
+    color: #004AAD;
+}
+
+#red-circle:hover div,
+#white-circle:hover {
+    box-shadow: 2px 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+#red-circle:active div,
+#white-circle:active {
+    width: calc(min(var(--A), var(--B)) - min(var(--C), var(--D)) - min(var(--E), var(--F)));
+    height: calc(min(var(--A), var(--B)) - min(var(--C), var(--D)) - min(var(--E), var(--F)));
+box-shadow: 3px 0 0 3px rgba(0, 0, 0, 0.5);
+}

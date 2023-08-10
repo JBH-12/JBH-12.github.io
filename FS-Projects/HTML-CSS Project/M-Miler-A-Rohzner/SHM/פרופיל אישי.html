@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פרופיל אישי</title>
+    <link rel="stylesheet" href="style/פרופיל אישי.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <div>חזרה לעמוד הבית</div>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="index.html" method="post">
+            <table>
+                <tr>
+                    <th id="column-id">
+                        <h1 id="header">פרופיל אישי</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="last-name-id" name="last-name" placeholder="כתוב כאן את השם הפרטי שלך"
+                            required />
+                    </td>
+                    <th>
+                        <label for="last-name-id">שם פרטי:</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="first-name-id" name="first-name" placeholder="כתוב כאן את שם המשפחה שלך"
+                            required />
+                    </td>
+                    <th>
+                        <label for="first-name-id">שם משפחה:</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="date" id="date-id" name="date" placeholder="כתוב כאן את תאריך הלידה שלך" required>
+                    </td>
+                    <th>
+                        <label for="date-id">תאריך לידה:</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="address-id" name="address" placeholder="כתוב כאן את הכתובת שלך"
+                            required />
+                    </td>
+                    <th>
+                        <label for="address-id">כתובת</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="tel" id="phone-id" name="phone" placeholder="כתוב כאן את מספר הטלפון שלך" required
+                            pattern="[0-9]{3}-[0-9]{7}" />
+                    </td>
+                    <th>
+                        <label for="phone-id">טלפון:</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" id="email-id" name="email" placeholder="כתוב כאן את כתובת המייל שלך"
+                            required />
+                    </td>
+                    <th>
+                        <label for="email-id">דוא''ל:</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="HMO" id="HMO-id" required>
+                            <option selected="true" disabled="disabled">בחר את קופת החולים שלך</option>
+                            <option>כללית</option>
+                            <option>לאומית</option>
+                            <option>מאוחדת</option>
+                            <option>מכבי</option>
+                        </select>
+                    </td>
+                    <th>
+                        <label for="HMO-id">קופת חולים:</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="history" id="history-id" cols="30" rows="2"></textarea>
+                    </td>
+                    <th>
+                        <label for="history-id">היסטוריה רפואית</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td id="column-id"><input type="submit" value="אשר ושלח"></td>
+                </tr>
+            </table>
+        </form>
+        </section>
+    </main>
+
+    <footer>
+        <img src="קבצים/מתוקן לוגו.png" alt="לוגו ש.ח.מ.">
+    </footer>
+
+</body>
+
+</html>

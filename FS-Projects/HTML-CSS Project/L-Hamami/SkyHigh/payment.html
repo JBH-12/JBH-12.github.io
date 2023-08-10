@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="align-center">
+    <!--שלב שני בתשלום: פרטי אשראי-->
+    <form action="completed.html">
+        <input placeholder="Card owner name" id="name" type="text" minlength="2" maxlength="440" name="name" required><br>
+        <input placeholder="Card number" type="text" onkeypress="return /[0-9]/i.test(event.key)" id="id" name="idnum" required><br>
+        <input placeholder="Month" type="text" maxlength="2" onkeypress="return /[0-9]/i.test(event.key)" id="id" name="idnum" required>
+        <input placeholder="Year" type="text" maxlength="4" minlength="2" onkeypress="return /[0-9]/i.test(event.key)" id="id" name="idnum" required><br>
+        <input placeholder="CVV" type="text" pattern="[0-9]+" maxlength="3" required><br>
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+b {
+    font-size: 24px;
+    color: rgb(12, 66, 107);
+    -webkit-text-stroke: 0px;
+}
+
+
+ul {
+    text-align: left;
+}
+
+li {
+    color: black;
+    -webkit-text-stroke: 1px black;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    font-size: 85%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td,
+th {
+    text-align: center;
+    border: 1px solid black;
+    border-color: black;
+    padding: 10px;
+
+}
+
+tr {
+    background-color: rgb(0, 165, 189);
+
+}
+
+td {
+    width: 10%;
+}
+
+form {
+    text-align: center;
+    display: inline-block;
+}
+
+input {
+    width: 300px;
+    padding: 6px;
+}
+
+iframe {
+    width: 400px;
+    height: 250px;
+    margin: auto;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.col {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.more {
+    text-align: center;
+    line-height: 1;
+}
+
+.photos {
+    justify-content: space-between;
+    border: 1px black solid;
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    display: block;
+}
+
+.head {
+    text-align: center;
+    color: rgb(0, 165, 189);
+    -webkit-text-stroke: 1px black;
+}
+
+.hover-color:hover {
+    background-color: bisque;
+}
+
+
+
+.background {
+    position: relative;
+    z-index: -1;
+}
+
+.background::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background: url(https://images.hdqwalls.com/wallpapers/airplane-wings.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.none {
+    display: none;
+
+}
+
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.plane {
+    width: 100px;
+    height: 100px;
+    background-image: url('./imeges/Plane.svg');
+    background-size: cover;
+    position: absolute;
+    top: 60%;
+    animation: fly 2s linear forwards;
+}
+
+#links {
+    justify-content: space-between;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateX(250%);
+    }
+
+    100% {
+        transform: translateX(-250%);
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    div {
+        width: 100%;
+
+    }
+
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+}
